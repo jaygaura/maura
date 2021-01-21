@@ -1,0 +1,41 @@
+.dataTables_wrapper a.paginate_button {
+    @apply rounded-md border cursor-pointer px-3 py-1 mx-1;
+}
+
+.dataTables_wrapper a.paginate_button.current {
+    @apply rounded-md border px-3 py-1 mx-1 bg-gray-100;
+}
+
+.dataTables_wrapper a.paginate_button.disabled {
+    @apply rounded-md border px-3 py-1 mx-1 opacity-50 cursor-not-allowed;
+}
+
+.dataTables_wrapper div.dataTables_length select {
+    @apply border rounded-md py-1 px-3 border-gray-300 bg-gray-100 mx-3;
+}
+
+.dataTables_wrapper div.dataTables_filter input {
+    @apply border rounded-md py-1 px-3 border-gray-300 bg-gray-100 ml-3;
+}
+
+table.dataTable  th {
+    @apply cursor-pointer;
+}
+
+table.dataTable tr.odd {
+    @apply bg-gray-100;
+}
+
+table.dataTable tr td,
+table.dataTable tr th {
+    @apply px-4 py-2;
+}
+
+/* Toggle */
+
+.toggle-checkbox:checked {
+    @apply right-0 border-green-400;
+}
+.toggle-checkbox:checked + .toggle-label {
+    @apply bg-green-400;
+}

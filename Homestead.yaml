@@ -1,0 +1,26 @@
+ip: 10.0.0.20
+memory: 2048
+cpus: 2
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: /media/jay/4TB/www/maura/code
+        to: /home/vagrant/code
+sites:
+    -
+        map: maura.can
+        to: /home/vagrant/code/public
+databases:
+    - homestead
+    - tests_http
+    - tests_dusk
+features:
+    - mariadb: true
+    - ohmyzsh: false
+    - webdriver: true
+    - python: true
+name: maura
+hostname: maura
