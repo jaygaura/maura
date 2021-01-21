@@ -18,7 +18,7 @@
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
             <!-- Page Heading -->
-            <header x-data="{ open: false }" class="fixed w-full bg-white z-50 shadow fixed sm:static">
+            <header x-data="{ open: false }" class="fixed w-full bg-white z-50 shadow sm:static">
                 <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between py-2">
                         <div class="flex">
