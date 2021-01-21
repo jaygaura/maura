@@ -49,16 +49,19 @@
     </script>
     @endsection
     <div class="flex flex-grow justify-center sm:justify-end px-8 py-4">
-        <button id="toggleValBtn" class="text-blue-600 text-sm">Toggle Javascript/Backend validation</button>
+        <button id="toggleValBtn" class="text-blue-600 text-sm">Toggle Javascript/Backend validation *</button>
     </div>
     <div class="px-8 py-10 flex flex-col sm:flex-row sm:space-x-12">
        <x-input id="choiceA" name="choices[]" label="Choice A" :value="old('choices[0]')" placeholder="optional"></x-input>
        <x-input id="choiceB" name="choices[]" label="Choice B" :value="old('choices[1]')" placeholder="optional"></x-input>
        <x-input id="choiceC" name="choices[]" label="Choice C" :value="old('choices[2]')" placeholder="optional"></x-input>
     </div>
-    <div class="flex justify-center mb-12">
+    <div class="flex justify-center">
         <button id="submitBtn" class="rounded-md px-5 py-3 my-5 text-white text-center bg-green-600 font-semibold shadow">
             Submit
         </button>
+    </div>
+    <div class="px-8 py-4 italic text-sm text-gray-600 mb-12">
+        (*) When toggled to use Javascript validation the backend validation is still active, it just that it's not "visible" because the javascript kicks in first.</button>
     </div>
 </x-app-layout>
