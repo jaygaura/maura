@@ -40,12 +40,14 @@ LIMIT 3;
 * [UI page - the Form](http://maura.can/q3)
 ### Classes and Methods
 
-* Controller, get method[code/app/Http/Controllers/Controller@Q3page()](code/app/Http/Controllers/Controller.php#L67)
+* Controller, get method [code/app/Http/Controllers/Controller@Q3page()](code/app/Http/Controllers/Controller.php#L67)
 * Controller, post method [code/app/Http/Controllers/Controller@Q3post()](code/app/Http/Controllers/Controller.php#L80)
 * Request Validation [code/app/Http/Requests/Q3PostRequest.php](code/app/Http/Requests/Q3PostRequest.php)
 * View [code/resources/views/q3.blade.php](code/resources/views/q3.blade.php)
 
-## How to spin up the server (assuming you have git, vagrant and composer already installed)
+## How to spin up the server
+(assuming you have git, vagrant and composer already installed)
+
 * clone the repository
 * `composer install`
 * `vagrant up`
