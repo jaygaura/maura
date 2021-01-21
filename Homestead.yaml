@@ -16,11 +16,10 @@ sites:
 databases:
     - homestead
     - tests_http
-    - tests_dusk
 features:
     - mariadb: true
     - ohmyzsh: false
-    - webdriver: true
-    - python: true
+    - webdriver: false
+    - python: false
 name: maura
 hostname: maura

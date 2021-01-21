@@ -55,14 +55,15 @@ LIMIT 3;
 
 * clone the repository
 * `composer install`
+* update [ip address](Homestead.yaml#L1) (if needed) and [local folder](Homestead.yaml#L10)
+* you will also need to set up virtual host on host machine `10.0.0.20 maura.can` (I did not use a vagrant plugin to manage hosts automatically).
 * `vagrant up`
 * `vagrant ssh`
 * now on the guest machine
 * `cd code` or just `www`
 * `composer install`
-* `art migrate --seed`
-* `art key:generate`
 * `yarn install`
 * `cp .env.example .env`
-* will also need to set up virtual host on host machine `10.0.0.20 maura.can` (I did not use a vagrant plugin to manage hosts automatically). If 10.0.0.20 is unavailble it can be changed in [code/Homestead.yaml](code/Homestead.yaml).
-* let me know if I missed anything (things not working) - writing this from memory.
+* `art key:generate`
+* `art migrate --seed`
+* [open in the browser](http://maura.can).
