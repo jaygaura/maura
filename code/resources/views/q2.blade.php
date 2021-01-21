@@ -1,4 +1,4 @@
-<x-app-layout title="Q2">
+<x-app-layout title="Q2" line="40">
 
     @section('js')
     <script>

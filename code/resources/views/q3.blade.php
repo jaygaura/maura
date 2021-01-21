@@ -1,4 +1,4 @@
-<x-app-layout title="Q3">
+<x-app-layout title="Q3" line="67">
 
     @section('js')
     @include('ajax')

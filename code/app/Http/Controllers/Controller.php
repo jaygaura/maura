@@ -96,9 +96,10 @@ class Controller extends BaseController
         return response()->json(['msg' => $msg], 200);
     }
 
-    public function showCode()
+    public function showCode($line = '')
     {
-        show_source(__FILE__);
+        $url = $line ? 'https://github.com/jaygaura/maura/blob/master/code/app/Http/Controllers/Controller.php#L' . $line : 'https://github.com/jaygaura/maura/blob/master/code/app/Http/Controllers/Controller.php';
+        return redirect()->away($url);
     }
 
     private function _code($code)

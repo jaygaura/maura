@@ -2,21 +2,21 @@
 
 namespace App\View\Components;
 
-use App\Models\Offering;
 use Illuminate\View\Component;
 
 class AppLayout extends Component
 {
-    public $title;
+    public $title, $line;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($title = '')
+    public function __construct($title = '', $line = '')
     {
         $this->title = $title;
+        $this->line  = $line;
     }
 
     /**

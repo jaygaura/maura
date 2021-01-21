@@ -36,7 +36,7 @@
                             </div>
                         </div>
                         <div class="flex flex-grow justify-center sm:justify-end">
-                            <a class="text-blue-600 text-sm" href="{{ route('code') }}" target="_blank" title="show code">show code</a>
+                            <a class="text-blue-600 text-sm" href="{{ route('code', ['line' => $line]) }}" target="_blank" title="show code">show code</a>
                         </div>
 
                         <!-- Hamburger -->

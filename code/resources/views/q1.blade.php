@@ -1,4 +1,4 @@
-<x-app-layout title="Q1">
+<x-app-layout title="Q1" line="18">
 
     @section('js')
     <script src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
