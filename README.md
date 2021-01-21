@@ -22,7 +22,7 @@ LIMIT 3;
 
 ### Classes and Methods
 
-* Class [code/app/Http/Controllers/Controller@Q1page()](code/app/Http/Controllers/Controller.php#L18)
+* Controller [code/app/Http/Controllers/Controller@Q1page()](code/app/Http/Controllers/Controller.php#L18)
 * View [code/resources/views/q1.blade.php](code/resources/views/q1.blade.php)
 
 ## Q2
@@ -31,8 +31,8 @@ LIMIT 3;
 
 ### Classes and Methods
 
-* [code/app/Http/Controllers/Controller@Q2page()](code/app/Http/Controllers/Controller.php#L40)
-* [code/app/Helpers](code/app/Helpers)
+* Controller [code/app/Http/Controllers/Controller@Q2page()](code/app/Http/Controllers/Controller.php#L40)
+* The OOP schematic classes [code/app/Helpers](code/app/Helpers)
 * View [code/resources/views/q2.blade.php](code/resources/views/q2.blade.php)
 
 ## Q3
@@ -40,9 +40,9 @@ LIMIT 3;
 * [UI page - the Form](http://maura.can/q3)
 ### Classes and Methods
 
-* [code/app/Http/Controllers/Controller@Q3page()](code/app/Http/Controllers/Controller.php#L67)
-* [code/app/Http/Controllers/Controller@Q3post()](code/app/Http/Controllers/Controller.php#L80)
-* [code/app/Http/Requests/Q3PostRequest.php](code/app/Http/Requests/Q3PostRequest.php)
+* Controller, get method[code/app/Http/Controllers/Controller@Q3page()](code/app/Http/Controllers/Controller.php#L67)
+* Controller, post method [code/app/Http/Controllers/Controller@Q3post()](code/app/Http/Controllers/Controller.php#L80)
+* Request Validation [code/app/Http/Requests/Q3PostRequest.php](code/app/Http/Requests/Q3PostRequest.php)
 * View [code/resources/views/q3.blade.php](code/resources/views/q3.blade.php)
 
 ## How to spin up the server (assuming you have git, vagrant and composer already installed)
