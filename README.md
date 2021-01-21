@@ -45,6 +45,11 @@ LIMIT 3;
 * Request Validation [code/app/Http/Requests/Q3PostRequest.php](code/app/Http/Requests/Q3PostRequest.php)
 * View [code/resources/views/q3.blade.php](code/resources/views/q3.blade.php)
 
+## Unit Testing
+
+* Basic HTTP Test [code/tests/Feature/BasicTest.php](code/tests/Feature/BasicTest.php)
+* to run tests `art migrate:fresh --env=testing && art test --stop-on-failure`
+
 ## How to spin up the server
 (assuming you have git, vagrant and composer already installed)
 
