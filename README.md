@@ -18,19 +18,19 @@ LIMIT 3;
 `
 * note - I use interval = 5 year because my sample data only includes years up to 2020 (2010 - 2020)
 * [UI page - Query results](http://maura.can/q1)
-* Class [code/app/Http/Controllers/Controller@Q1page()](jaygaura/maura/blob/master/code/app/Http/Controllers/Controller.php#L18)
+* Class [code/app/Http/Controllers/Controller@Q1page()](code/app/Http/Controllers/Controller.php#L18)
 * To populate data run `art migrate:fresh --seed`
 
 ## Q2
 
 * [UI page - Simple visual demo](http://maura.can/q2)
-* Class [code/app/Http/Controllers/Controller@Q2page()](jaygaura/maura/blob/master/code/app/Http/Controllers/Controller.php#L40)
-* The other classes are in * Class [code/app/Http/Controllers/Controller@Q1page()](jaygaura/maura/blob/master/code/app/Helpers)
+* Class [code/app/Http/Controllers/Controller@Q2page()](code/app/Http/Controllers/Controller.php#L40)
+* The other classes are in * Class [code/app/Http/Controllers/Controller@Q1page()](code/app/Helpers)
 
 ## Q3
 
 * [UI page - the Form](http://maura.can/q3)
-* Class [code/app/Http/Controllers/Controller@Q3page()](jaygaura/maura/blob/master/code/app/Http/Controllers/Controller.php#L67)
+* Class [code/app/Http/Controllers/Controller@Q3page()](code/app/Http/Controllers/Controller.php#L67)
 
 ## How to spin up the server (assuming you have git, vagrant and composer already installed)
 * clone the repository
@@ -44,5 +44,5 @@ LIMIT 3;
 * `art key:generate`
 * `yarn install`
 * `cp .env.example .env`
-* will also need to set up virtual host on host machine `10.0.0.20 maura.can` (I did not use a vagrant plugin to manage hosts automatically). If 10.0.0.20 is unavailble it can be changed in [code/Homestead.yaml](jaygaura/maura/blob/master/code/Homestead.yaml).
+* will also need to set up virtual host on host machine `10.0.0.20 maura.can` (I did not use a vagrant plugin to manage hosts automatically). If 10.0.0.20 is unavailble it can be changed in [code/Homestead.yaml](code/Homestead.yaml).
 * let me know if I missed anything (things not working) - writing this from memory.
